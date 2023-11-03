@@ -1,16 +1,22 @@
 package com.ct;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
-public class Canary {
+@EqualsAndHashCode(callSuper = true)
+public class Canary extends Bird implements Greetable {
 
     private String name;
 
     private boolean isYellow;
 
-    //make a bird super class
-    //make implement greetable
-    // add another bird type -> Crow
+    public void sayHello() {
+        System.out.println("tweet");
+    }
+
+    //make a bird super class - done
+    //make implement greetable - done
+    // add another bird type -> Crow - done
 
 }
