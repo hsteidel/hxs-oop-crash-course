@@ -17,6 +17,8 @@ public class UserDB {
 
     private String name;
 
+    private int age;
+
     private boolean hasLoggedIn;
 
     private String password;

@@ -11,6 +11,8 @@ public class CreateUserRequest  implements Creatable {
 
     private String name;
 
+    private int age;
+
     private String password;
 
 }

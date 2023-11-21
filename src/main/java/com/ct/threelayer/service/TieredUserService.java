@@ -20,6 +20,7 @@ public class TieredUserService {
         //has call the data to save the user
         var newDBUser = UserDB.builder()
                 .name(user.getName())
+                .age(user.getAge())
                 .password(PasswordUtils.encryptPassword(user.getPassword()))
                 .createdOn(Instant.now())
                 .build();
