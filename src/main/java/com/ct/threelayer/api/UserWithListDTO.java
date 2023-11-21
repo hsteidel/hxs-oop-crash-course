@@ -17,6 +17,8 @@ public class UserWithListDTO {
 
     private String name;
 
+    private String city;
+
     private List<TodoItemDB> todoList;
 
     private LocalDate createdOn;

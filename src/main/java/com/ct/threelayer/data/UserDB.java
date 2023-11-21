@@ -19,6 +19,8 @@ public class UserDB {
 
     private int age;
 
+    private String city;
+
     private boolean hasLoggedIn;
 
     private String password;

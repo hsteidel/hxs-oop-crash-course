@@ -13,6 +13,8 @@ public class CreateUserRequest  implements Creatable {
 
     private int age;
 
+    private int zipCode;
+
     private String password;
 
 }
