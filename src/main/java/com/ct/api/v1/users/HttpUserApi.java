@@ -1,15 +1,15 @@
-package com.ct.threelayer.api;
+package com.ct.api.v1.users;
 
-import com.ct.threelayer.service.TieredUserService;
 import lombok.RequiredArgsConstructor;
 
+@Deprecated
 @RequiredArgsConstructor
 public class HttpUserApi {
 
     private final TieredUserService userService;
 
     //@PostEndpoint("/users")
-    public UserWithListDTO createUser(CreateUserRequest createUserRequest) {
+    public UserWithListDTO createUser(UpdateUserRequest createUserRequest) {
         return userService.createUser(createUserRequest);
     }
 

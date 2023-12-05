@@ -1,4 +1,4 @@
-package com.ct.threelayer.data;
+package com.ct.data;
 
 import java.util.ArrayList;
 import java.util.List;

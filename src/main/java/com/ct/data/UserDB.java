@@ -1,4 +1,4 @@
-package com.ct.threelayer.data;
+package com.ct.data;
 
 import lombok.Builder;
 import lombok.Data;

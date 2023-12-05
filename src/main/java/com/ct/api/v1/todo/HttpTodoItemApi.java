@@ -1,7 +1,6 @@
-package com.ct.threelayer.api;
+package com.ct.api.v1.todo;
 
-import com.ct.threelayer.data.TodoItemDB;
-import com.ct.threelayer.service.TieredTodService;
+import com.ct.data.TodoItemDB;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

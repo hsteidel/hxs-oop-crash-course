@@ -1,8 +1,8 @@
-package com.ct.threelayer.service;
+package com.ct.api.v1.todo;
 
-import com.ct.threelayer.data.TieredTodoRepository;
-import com.ct.threelayer.data.TieredUserRepository;
-import com.ct.threelayer.data.TodoItemDB;
+import com.ct.data.TieredTodoRepository;
+import com.ct.data.TieredUserRepository;
+import com.ct.data.TodoItemDB;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

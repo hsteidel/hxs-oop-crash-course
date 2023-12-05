@@ -2,8 +2,10 @@ package com.ct.threelayer.api;
 
 import com.ct.adapters.GeoAdapter;
 import com.ct.adapters.HttpGeoAdapter;
-import com.ct.threelayer.data.TieredListUserRepository;
-import com.ct.threelayer.service.TieredUserService;
+import com.ct.api.v1.users.HttpUserApi;
+import com.ct.api.v1.users.TieredUserService;
+import com.ct.api.v1.users.UpdateUserRequest;
+import com.ct.data.TieredListUserRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -26,7 +28,7 @@ public class HttpUserApiTest {
         );
         var name = "joe";
         var result = sut.createUser(
-                CreateUserRequest.builder()
+                UpdateUserRequest.builder()
                         .name(name)
                         .zipCode(testZip)
                         .password("sdas")
@@ -45,7 +47,7 @@ public class HttpUserApiTest {
         );
         var name = "joe";
         var result = sut.createUser(
-                CreateUserRequest.builder()
+                UpdateUserRequest.builder()
                         .name(name)
                         .zipCode(testZip)
                         .password("sdas")

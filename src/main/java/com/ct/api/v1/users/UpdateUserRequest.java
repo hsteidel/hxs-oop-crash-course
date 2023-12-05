@@ -1,4 +1,4 @@
-package com.ct.threelayer.api;
+package com.ct.api.v1.users;
 
 import com.ct.common.Creatable;
 import lombok.Builder;
@@ -7,7 +7,7 @@ import lombok.Data;
 //data transfer objects
 @Data
 @Builder
-public class CreateUserRequest  implements Creatable {
+public class UpdateUserRequest implements Creatable {
 
     private String name;
 

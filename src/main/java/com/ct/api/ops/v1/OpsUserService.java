@@ -1,30 +1,26 @@
-package com.ct.threelayer.service;
+package com.ct.api.ops.v1;
 
 import com.ct.adapters.GeoAdapter;
+import com.ct.api.v1.users.UpdateUserRequest;
+import com.ct.api.v1.users.UserWithListDTO;
 import com.ct.common.PasswordUtils;
-import com.ct.common.UserValidationUtil;
-import com.ct.threelayer.api.CreateUserRequest;
-import com.ct.threelayer.api.UserWithListDTO;
-import com.ct.threelayer.data.TieredListUserRepository;
-import com.ct.threelayer.data.UserDB;
+import com.ct.data.TieredListUserRepository;
+import com.ct.data.UserDB;
 import lombok.RequiredArgsConstructor;
 
 import java.time.Instant;
 
 @RequiredArgsConstructor
-public class TieredUserService {
+class OpsUserService {
 
     private final GeoAdapter geoAdapter;
 
     private final TieredListUserRepository userRepository;
 
-
-    public UserWithListDTO createUser(CreateUserRequest user) {
-        UserValidationUtil.validateUser(user);
-        //has call the data to save the user
+    public UserWithListDTO createUser(UpdateUserRequest user) {
+        // here you have ops specific logic or code
 
         var city = geoAdapter.findCityByZipCode(user.getZipCode());
-
         var newDBUser = UserDB.builder()
                 .name(user.getName())
                 .age(user.getAge())

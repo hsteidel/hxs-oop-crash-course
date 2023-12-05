@@ -1,6 +1,6 @@
-package com.ct.threelayer.api;
+package com.ct.api.v2.users;
 
-import com.ct.threelayer.data.TodoItemDB;
+import com.ct.data.TodoItemDB;
 import lombok.Builder;
 import lombok.Data;
 

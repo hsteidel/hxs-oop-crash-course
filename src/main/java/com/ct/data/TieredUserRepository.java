@@ -1,4 +1,4 @@
-package com.ct.threelayer.data;
+package com.ct.data;
 
 import java.util.HashMap;
 import java.util.Map;
